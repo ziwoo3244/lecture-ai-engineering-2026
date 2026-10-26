@@ -3,6 +3,7 @@
 使い方:
     uv run python -m app.ask "LoRAとは何ですか？"
     uv run python -m app.ask            # 質問を省略すると、講座に固有の質問をする
+    uv run python -m app.ask --chat     # 会話履歴を保ったまま続けて質問する（宿題・実装）
 
 ツールも会話履歴も持たない「素の」呼び出し。
 講座に固有のことを聞くと、「分からない」と答えるか、一般論でもっともらしく答える
@@ -31,12 +32,50 @@ def ask(question: str) -> str:
     return response.text
 
 
+def chat() -> None:
+    """会話履歴を保ったまま、続けて質問できる対話モード。
+
+    client.chats.create() で作った Chat は、送受信したメッセージを履歴として保持し、
+    send_message() のたびに履歴ごとモデルに送る。空行・exit・Ctrl+D で終了する。
+    """
+    client = genai.Client(api_key=get_api_key())
+    session = client.chats.create(model=MODEL)
+
+    print("会話モード（空行・exit・Ctrl+D で終了）")
+    while True:
+        try:
+            question = input("\n[質問] ").strip()
+        except (EOFError, KeyboardInterrupt):
+            print()
+            break
+        if question in ("", "exit", "quit"):
+            break
+
+        try:
+            response = session.send_message(question)
+        except errors.APIError as e:
+            # 失敗したやり取りは履歴に残らないので、そのまま次の質問に進める
+            print(api_error_message(e.code, e.message))
+            continue
+
+        print(f"\n{response.text}")
+
+    turns = len(session.get_history()) // 2
+    print(f"[終了] {turns} 往復のやり取りをしました。")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="素のLLMに質問する")
     parser.add_argument("question", nargs="?", default=DEFAULT_QUESTION)
+    parser.add_argument(
+        "--chat", action="store_true", help="会話履歴を保ったまま続けて質問する"
+    )
     args = parser.parse_args()
 
     print(f"[model] {MODEL}")
+    if args.chat:
+        chat()
+        return
     print(f"[質問] {args.question}\n")
     try:
         print(ask(args.question))
