@@ -1,0 +1,201 @@
+{
+  "summary": {
+    "label": "after",
+    "n": 21,
+    "format_rate": 1.0,
+    "content_rate": 0.8095238095238095,
+    "both_rate": 0.8095238095238095,
+    "seconds": 47.9
+  },
+  "rows": [
+    {
+      "question": "営業時間を教えてください",
+      "raw": "{\"answer\": \"営業時間は平日 6:00〜23:00、土日祝 8:00〜20:00 です。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "平日と土日祝の営業時間をそれぞれ教えてください",
+      "raw": "{\"answer\": \"営業時間は平日 6:00〜23:00、土日祝 8:00〜20:00 です。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "閉店は何時ですか",
+      "raw": "{\"answer\": \"この FAQ には記載がありません。スタッフに確認が必要です。\", \"needs_review\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "月々の料金は？",
+      "raw": "{\"answer\": \"月会費はレギュラー会員が税込 8,800 円、平日昼間会員が税込 5,500 円です。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "レギュラー会員と平日昼間会員の月会費を教えてください",
+      "raw": "{\"answer\": \"月会費はレギュラー会員が税込 8,800 円、平日昼間会員が税込 5,500 円です。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "会費は税込でいくらですか",
+      "raw": "{\"answer\": \"月会費はレギュラー会員が税込 8,800 円、平日昼間会員が税込 5,500 円です。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "退会方法を教えてください",
+      "raw": "{\"answer\": \"退会は希望月の前月 10 日までに、アプリの「会員情報」画面から手続きします。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "退会はいつまでにどこから申し込みますか",
+      "raw": "{\"answer\": \"退会は希望月の前月 10 日までに、アプリの「会員情報」画面から手続きします。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "ジムをやめる場合の手順を教えてください",
+      "raw": "{\"answer\": \"この FAQ には記載がありません。スタッフに確認が必要です。\", \"needs_review\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "必須の持ち物は？",
+      "raw": "{\"answer\": \"トレーニングエリアでは室内シューズとタオルが必須です。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "トレーニングエリアに入るときに必要なものは何ですか",
+      "raw": "{\"answer\": \"トレーニングエリアでは室内シューズとタオルが必須です。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "シューズとタオルは必要ですか",
+      "raw": "{\"answer\": \"トレーニングエリアでは室内シューズとタオルが必須です。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "休会できる期間は？",
+      "raw": "{\"answer\": \"休会は月額税込 1,100 円で、1 か月単位で最長 6 か月まで利用できます。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "休会の月額と最長期間を教えてください",
+      "raw": "{\"answer\": \"月額税込 1,100 円で、1 か月単位で最長 6 か月まで利用できます。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "休会は何か月まで続けられますか",
+      "raw": "{\"answer\": \"休会は月額税込 1,100 円で、1 か月単位で最長 6 か月まで利用できます。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "パーソナルトレーニングの料金はいくらですか",
+      "raw": "{\"answer\": \"トレーニングエリアでは室内シューズとタオルが必須です。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "プールはありますか",
+      "raw": "{\"answer\": \"この FAQ には記載がありません。スタッフに確認が必要です。\", \"needs_review\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": true
+    },
+    {
+      "question": "体験利用はできますか",
+      "raw": "{\"answer\": \"この FAQ には記載がありません。スタッフに確認が必要です。\", \"needs_review\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": true
+    },
+    {
+      "question": "退会するときに違約金はかかりますか",
+      "raw": "{\"answer\": \"退会は希望月の前月 10 日までに、アプリの「会員情報」画面から手続きします。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "ロッカーは無料で使えますか",
+      "raw": "{\"answer\": \"この FAQ には記載がありません。スタッフに確認が必要です。\", \"needs_review\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": true
+    },
+    {
+      "question": "休会中に施設を利用できますか",
+      "raw": "{\"answer\": \"この FAQ には記載がありません。スタッフに確認が必要です。\", \"needs_review\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": true
+    }
+  ]
+}
